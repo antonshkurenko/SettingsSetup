@@ -1,8 +1,9 @@
 package io.github.tonyshkurenko.settingssetup;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
+import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.support.v4.app.Fragment;
 import android.view.MenuItem;
@@ -39,6 +40,16 @@ public class SimpleSettingsFragment extends PreferenceFragment {
     if (getArguments() != null) {
 
     }
+
+    //Preference preference = findPreference("key");
+    //EditTextPreference preference = ((EditTextPreference) findPreference("key"));
+
+    /*preference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+      @Override public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+        return false; // false for not-saving
+      }
+    });*/
   }
 
   @Override public boolean onOptionsItemSelected(MenuItem item) {
